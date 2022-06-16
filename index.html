@@ -1,10 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en,id">
   <head>
-    <meta charset="utf-8">
-    <title>Mavbozo Personal Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mavbozo's Personal Site</title>
+    <style>
+     html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+     body { margin: 0; }
+     h1 { font-size: 2em; margin: .67em 0; }
+     hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+     pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+     a { background-color: transparent; }
+     b, strong { font-weight: bolder; }
+     code { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+     img { border-style: none; max-width: 100%;}
+     html, body, div, article, aside, section, main, nav, footer, header, form,
+     fieldset, legend, pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt,
+     dd, blockquote, figcaption, figure, textarea, table, td, th, tr,
+     input[type="email"], input[type="number"], input[type="password"],
+     input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
+     .tl { text-align: left; }
+     .tr { text-align: right; }
+     .tc { text-align: center; }
+     .tj { text-align: justify; }
+     .f1 { font-size: 3rem; }
+     .f2 { font-size: 2.25rem; }
+     .f3 { font-size: 1.5rem; }
+     .f4 { font-size: 1.25rem; }
+     .f5 { font-size: 1rem; }
+     .f6 { font-size: .875rem; }
+     .f7 { font-size: .75rem; }
+     .normal { font-weight: normal; }
+     .b { font-weight: bold; }
+     .fw1 { font-weight: 100; }
+     .fw2 { font-weight: 200; }
+     .fw3 { font-weight: 300; }
+     .fw4 { font-weight: 400; }
+     .fw5 { font-weight: 500; }
+     .fw6 { font-weight: 600; }
+     .fw7 { font-weight: 700; }
+     .fw8 { font-weight: 800; }
+     .fw9 { font-weight: 900; }
+     .pv0 { padding-top: 0; padding-bottom: 0; }
+     .pv1 { padding-top: .25rem; padding-bottom: .25rem; }
+     .pv2 { padding-top: .5rem; padding-bottom: .5rem; }
+     .pv3 { padding-top: 1rem; padding-bottom: 1rem; }
+     .pv4 { padding-top: 2rem; padding-bottom: 2rem; }
+     .pv5 { padding-top: 4rem; padding-bottom: 4rem; }
+     .pv6 { padding-top: 8rem; padding-bottom: 8rem; }
+     .pv7 { padding-top: 16rem; padding-bottom: 16rem; }
+     .pv0-ns { padding-top: 0; padding-bottom: 0; }
+     .pv1-ns { padding-top: .25rem; padding-bottom: .25rem; }
+     .pv2-ns { padding-top: .5rem; padding-bottom: .5rem; }
+     .pv3-ns { padding-top: 1rem; padding-bottom: 1rem; }
+     .pv4-ns { padding-top: 2rem; padding-bottom: 2rem; }
+     .pv5-ns { padding-top: 4rem; padding-bottom: 4rem; }
+     .pv6-ns { padding-top: 8rem; padding-bottom: 8rem; }
+     .pv7-ns { padding-top: 16rem; padding-bottom: 16rem; }
+     .f1-ns { font-size: 3rem; }
+     .f2-ns { font-size: 2.25rem; }
+     .f3-ns { font-size: 1.5rem; }
+     .f4-ns { font-size: 1.25rem; }
+     .f5-ns { font-size: 1rem; }
+     .f6-ns { font-size: .875rem; }
+     .f7-ns { font-size: .75rem; }
+     .tracked { letter-spacing: .1em; }
+     .mw-100 { max-width: 100%; }
+     .sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+     code, .code { font-family: Consolas, monaco, monospace; }
+     .bg-white { background-color: #fff; }
+     .bg-red { background-color: #ff4136; }
+     .white { color: #fff; }
+
+     .fl { float: left; _display: inline; }
+
+     .mw8 { max-width: 64rem; }
+     .center { margin-right: auto; margin-left: auto; }
+     .ph2-ns { padding-left: .5rem; padding-right: .5rem; }
+     .ph3-ns { padding-left: 1rem; padding-right: 1rem; }
+     .pa2 { padding: .5rem; }
+     .pv4 { padding-top: 2rem; padding-bottom: 2rem; }
+     .cf:before, .cf:after { content: " "; display: table; }
+     .cf:after { clear: both; }
+     .cf { *zoom: 1; }
+     .w-100 { width: 100%; }
+
+     @media screen and (min-width: 30em) {
+       .w-third-ns { width: 33.33333%; }
+       .w-two-thirds-ns { width: 66.66667%; }
+     }
+     .dim { opacity: 1; transition: opacity .15s ease-in; }
+     .dim:hover, .dim:focus { opacity: .5; transition: opacity .15s ease-in; }
+     .link { text-decoration: none; transition: color .15s ease-in; }
+     .link:link, .link:visited { transition: color .15s ease-in; }
+     .link:hover { transition: color .15s ease-in; }
+     .link:active { transition: color .15s ease-in; }
+     .link:focus { transition: color .15s ease-in; outline: 1px dotted currentColor; }
+     .list { list-style-type: none; }
+     .lh-title { line-height: 1.25; }
+     .lh-copy { line-height: 1.5; }
+     .measure { max-width: 30em; }
+     .blue { color: #357edd; }
+    </style>
   </head>
-  <body>
-    <p>Hello, my name is mavbozo. Welcome to my Personal Site.</p>
+  <body class="w-100 sans-serif bg-white">
+    <div class="tc pv1 pv2-ns bg-red">
+      <a class="link dim f1 f2-ns fw9 white" href="/blog" title="blog">Mavbozo</a>
+      <p class="f2 white fw8 ttu tracked">You're either a zenius or a bozo</p>
+    </div>
+    <div class="mw8 center ph3-ns">
+      <div class="cf ph2-ns">
+	<div class="fl w-100 w-two-thirds-ns pa2">
+	  <div class="pv4">
+	    <h1 class="lh-title f2">Introduction</h1>
+	    <dl class="f4">
+	      <dt class="b pv1-ns">Current Job</dt>
+	      <dd>Engineer-in-Chief, Edulab, Director at PT Zona Edukasi Nusantara</dd>
+	      <dt class="b pv2-ns">Favorite Programming Language</dt>
+	      <dd><a href="https://www.clojure.org">Clojure</a></dd>
+	      <dt class="b pv2-ns">My Ideal Job</dt>
+	      <dd>Building useful software with Clojure</dd>
+	    </dl>
+	    
+	  </div>
+	</div>
+	<div class="fl w-100 w-third-ns pa2">
+	  <div class="pv4">
+	    <p class="f4 f5"><a class="link blue" href="/sitemap">Sitemap</a></p>
+	    <p class="f4 f5"><a class="link blue" href="https://twitter.com/mavbozo">twitter</a></p>
+	    <p class="f4 f5">Hello, my name is Avicenna. You can call me Avi. Mavbozo is my pseudonym</p>
+	  </div>
+	</div>
+      </div>
+    </div>
+
   </body>
 </html>
